@@ -14,7 +14,7 @@ const micButton = document.getElementById("micButton");
 
 window.setAccountId = function (id) {
   accountId = id;
-  
+
   if (webSocket && webSocket.readyState === WebSocket.OPEN) {
     sendSessionUpdate();
   }
@@ -23,7 +23,7 @@ window.setAccountId = function (id) {
 
 // Initialize WebSocket
 function connectWebSocket() {
-  const wsUrl = "wss://aisurveymetrics.com/realtime";
+  const wsUrl = "YOUR WEB SOCKET";
   webSocket = new WebSocket(wsUrl);
 
   webSocket.onopen = () => {
