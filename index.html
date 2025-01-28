@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Bot Button</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: Verdana, Geneva, sans-serif;
+        font-size: 18px;
+      }
+
+      .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: red;
+        color: #fff;
+        border-radius: 50%;
+        text-align: center;
+        box-shadow: 2px 2px 3px #999;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+      }
+
+      .my-float {
+        margin-top: 22px;
+      }
+
+      @media (max-width: 600px) {
+        body {
+          font-size: 16px;
+        }
+        .float {
+          width: 50px;
+          height: 50px;
+          bottom: 30px;
+          right: 30px;
+        }
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <a class="float" id="micButton" title="Toggle Mic 🎤">
+      <i class="fa-solid fa-microphone"></i>
+    </a>
+
+    <script type="module" src="app.js"></script>
+    <script>
+      window.addEventListener("load", () => {
+        window.setAccountId("6747fca3745e22df1b41f5c3");
+      });
+    </script>
+  </body>
+</html>
